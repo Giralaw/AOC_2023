@@ -38,7 +38,7 @@ for line in lines:
         p1 += ID
 
 
-print('p1 is ', p1)
+print('p1 is', p1)
 
 p2 = 0
 for line in lines:
@@ -66,7 +66,7 @@ for line in lines:
                     bmin = int(words[i-1])              
     p2 += gmin * rmin * bmin
 
-print('p2 is ', p2)
+print('p2 is', p2)
 
 
 '''Part 1 was Brute force comma casework.
