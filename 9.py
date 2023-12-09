@@ -15,9 +15,9 @@ lines = [x for x in data.split('\n')]
 
 p1 = 0
 p2 = 0
-
-for line in lines:
-    seq = [eval(i) for i in line.split(" ")][::-1]
+def ext(series,rev):
+    seq = [eval(i) for i in series.split(" ")]
+    seq = seq[::-1] if rev else seq
     # print(seq)
     diff = False
     ch = [seq]
@@ -36,7 +36,15 @@ for line in lines:
     ch.reverse()
     for k in range(1,len(ch)):
         ch[k].append(ch[k][-1]+ch[k-1][-1])
-    p1 += ch[-1][-1]
+    return ch[-1][-1]
+    
+
+
+for line in lines:
+    p1 += ext(line,False)
+
+for line in lines:
+    p2 += ext(line,True)
 
 print('p1 is ', p1)
 print('p2 is ', p2)
