@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-# Advent of Code 2023 Day _
+# Advent of Code 2023 Day 10
 
 dirs1 = [(-1,1),(1,1),(1,-1),(-1,-1)]
 dirs2 = [[1,0],[0,1],[-1,0],[0,-1]]
