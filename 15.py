@@ -10,7 +10,6 @@ from copy import deepcopy
 from collections import defaultdict, deque
 import functools
 from aoc_tools import *
-from statistics import mode, multimode
 
 data = open('.in').read().strip()
 lines = [x for x in data.split('\n')]
