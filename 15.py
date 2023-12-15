@@ -55,7 +55,7 @@ def day(part1):
         if not(part1):
             bxs = bix[cd]
             assert(bxs[lb] != -1)
-            
+
             if op:
                 if not(bxs):
                     bxs[lb] = fl
@@ -68,8 +68,9 @@ def day(part1):
                     del bxs[lb]
     if not(part1):
         for idx,bx in enumerate(bix):
-            for idy,spt in enumerate(bix[idx]):
+            #print(bx)
 
+            for idy,spt in enumerate(bix[idx]):
                 a = int((bix[idx][spt]))
                 p2 += (idx+1)*(idy+1)*a
         return p2
@@ -82,3 +83,4 @@ print('p2 is ', day(False))
 
 # In retrospect I definitely didn't actually need a dictionary,
 # just a list of lists
+# We'll find out tech from JPaul's video
