@@ -103,7 +103,3 @@ print('\n')
 
 print('p1 is ', p1)
 print('p2 is ', p2)
-# not 1564, not 569; should be 567 since S doesn't count as one of those?
-
-# realized the issue - wasn't checking correctly if current pipe should connect to new pipe
-# Part 2 looks like a niiightttmareee
