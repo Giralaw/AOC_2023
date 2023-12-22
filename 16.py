@@ -1,9 +1,9 @@
 #! /usr/bin/env python3
 
-# Advent of Code 2023 Day _
+# Advent of Code 2023 Day 16
 
 dirs1 = [(-1,1),(1,1),(1,-1),(-1,-1)]
-dirs2 = [[-1,0],[0,1],[1,0],[0,-1]]
+dirs2 = [[1,0],[0,1],[-1,0],[0,-1]]
 
 import string, math, time, re, itertools, numpy as np
 from copy import deepcopy
@@ -12,7 +12,7 @@ import functools
 from aoc_tools import *
 from statistics import mode, multimode
 
-data = open('.in').read().strip()
+data = open('16.in').read().strip()
 lines = data.split('\n')
 
 p1 = 0

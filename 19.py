@@ -3,7 +3,7 @@
 # Advent of Code 2023 Day _
 
 dirs1 = [(-1,1),(1,1),(1,-1),(-1,-1)]
-dirs2 = [[-1,0],[0,1],[1,0],[0,-1]]
+dirs2 = [[1,0],[0,1],[-1,0],[0,-1]]
 
 import string, math, time, re, itertools, numpy as np
 from copy import deepcopy
